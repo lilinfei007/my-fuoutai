@@ -2,18 +2,19 @@
   font-family: "Aptos", "Trebuchet MS", "PingFang SC", "Microsoft YaHei", sans-serif;
   color: #163223;
   background:
-    radial-gradient(circle at top left, rgba(160, 221, 168, 0.38), transparent 32%),
-    radial-gradient(circle at right center, rgba(65, 135, 84, 0.16), transparent 28%),
-    linear-gradient(180deg, #f4fbf2 0%, #edf7ea 40%, #e3f0e0 100%);
+    radial-gradient(circle at 10% 10%, rgba(177, 206, 145, 0.32), transparent 30%),
+    radial-gradient(circle at 86% 14%, rgba(201, 181, 127, 0.18), transparent 24%),
+    radial-gradient(circle at 18% 82%, rgba(118, 168, 97, 0.16), transparent 26%),
+    linear-gradient(180deg, #fcfbf5 0%, #f3f4e9 46%, #e6eee1 100%);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  --bg-soft: rgba(255, 255, 255, 0.68);
-  --border-soft: rgba(46, 104, 57, 0.14);
-  --green-deep: #133d24;
-  --text-muted: #486454;
-  --shadow-soft: 0 24px 60px rgba(37, 95, 51, 0.12);
+  --bg-soft: rgba(255, 253, 247, 0.76);
+  --border-soft: rgba(67, 106, 62, 0.12);
+  --green-deep: #1d432a;
+  --text-muted: #5a6d5d;
+  --shadow-soft: 0 24px 60px rgba(46, 78, 51, 0.12);
 }
 
 * {
@@ -28,6 +29,7 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  color: var(--green-deep);
 }
 
 a {
@@ -73,10 +75,10 @@ textarea {
   margin-bottom: 28px;
   padding: 16px 20px;
   border: 1px solid var(--border-soft);
-  border-radius: 24px;
-  background: rgba(255, 255, 255, 0.72);
+  border-radius: 26px;
+  background: rgba(255, 252, 246, 0.82);
   backdrop-filter: blur(16px);
-  box-shadow: 0 14px 40px rgba(32, 80, 45, 0.08);
+  box-shadow: 0 18px 44px rgba(45, 74, 48, 0.08);
 }
 
 .brand-block {
@@ -91,11 +93,17 @@ textarea {
   width: 52px;
   height: 52px;
   border-radius: 16px;
-  background: linear-gradient(145deg, #2d8747, #89cf73);
+  background: linear-gradient(145deg, #2d7241, #97bb73);
   color: #f5fff2;
   font-size: 1.45rem;
   font-weight: 700;
-  box-shadow: 0 16px 32px rgba(61, 133, 67, 0.24);
+  box-shadow: 0 16px 32px rgba(66, 112, 61, 0.22);
+}
+
+.brand-block h1 {
+  font-size: clamp(1rem, 2vw, 1.32rem);
+  line-height: 1.2;
+  color: var(--green-deep);
 }
 
 .brand-block h1,
@@ -126,7 +134,7 @@ textarea {
 
 .eyebrow,
 .section-kicker {
-  color: #4f8a55;
+  color: #6d8b56;
   font-weight: 700;
 }
 
@@ -140,6 +148,7 @@ textarea {
 .site-nav a {
   color: var(--text-muted);
   font-weight: 600;
+  font-size: 0.96rem;
 }
 
 .site-nav a:hover,
@@ -229,14 +238,14 @@ textarea {
 }
 
 .primary-btn {
-  background: linear-gradient(135deg, #1d6d34, #6eba6d);
+  background: linear-gradient(135deg, #2b6a3a, #8eb468);
   color: #f7fff4;
-  box-shadow: 0 18px 36px rgba(39, 106, 53, 0.24);
+  box-shadow: 0 18px 36px rgba(54, 99, 53, 0.22);
 }
 
 .secondary-btn {
   border: 1px solid rgba(33, 90, 42, 0.18);
-  background: rgba(255, 255, 255, 0.78);
+  background: rgba(255, 250, 242, 0.84);
   color: var(--green-deep);
 }
 
@@ -279,7 +288,7 @@ textarea {
 .site-footer,
 .inquiry-form {
   border: 1px solid var(--border-soft);
-  background: rgba(255, 255, 255, 0.68);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.86), rgba(244, 248, 239, 0.7));
   box-shadow: var(--shadow-soft);
 }
 
@@ -338,7 +347,7 @@ textarea {
   inset: 72px 36px 80px 54px;
   padding: 32px;
   background:
-    linear-gradient(160deg, rgba(18, 63, 34, 0.92), rgba(67, 144, 84, 0.9)),
+    linear-gradient(150deg, rgba(24, 67, 39, 0.96), rgba(84, 136, 72, 0.9) 62%, rgba(148, 129, 79, 0.56) 100%),
     rgba(255, 255, 255, 0.68);
   color: #f3fff1;
 }
@@ -369,6 +378,7 @@ textarea {
 
 .visual-float {
   padding: 18px 20px;
+  background: rgba(255, 250, 242, 0.78);
   color: var(--green-deep);
 }
 
@@ -400,10 +410,12 @@ textarea {
 .content-section {
   padding: 34px;
   border-radius: 36px;
+  border: 1px solid var(--border-soft);
+  background: rgba(255, 252, 246, 0.5);
 }
 
 .alt-surface {
-  background: rgba(255, 255, 255, 0.42);
+  background: rgba(248, 248, 240, 0.76);
 }
 
 .section-heading {
@@ -432,6 +444,84 @@ textarea {
   display: grid;
   gap: 18px;
   margin-top: 24px;
+}
+
+.about-section {
+  overflow: hidden;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(300px, 0.9fr);
+  gap: 22px;
+  align-items: stretch;
+}
+
+.about-main {
+  padding: 30px;
+  border-radius: 30px;
+  background:
+    linear-gradient(150deg, rgba(35, 76, 46, 0.96), rgba(109, 151, 90, 0.88) 62%, rgba(155, 138, 93, 0.5) 100%);
+  color: #f6fff2;
+  box-shadow: var(--shadow-soft);
+}
+
+.about-main h3,
+.about-card h4 {
+  margin: 0;
+  color: inherit;
+}
+
+.about-main h3 {
+  margin-top: 12px;
+  font-family: "Georgia", "Times New Roman", "Songti SC", serif;
+  font-size: clamp(2rem, 4vw, 2.9rem);
+}
+
+.about-main p {
+  margin: 18px 0 0;
+  line-height: 1.9;
+  color: rgba(243, 255, 241, 0.88);
+}
+
+.about-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.about-badges span {
+  padding: 9px 16px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.14);
+  color: #f5fff2;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.about-side {
+  display: grid;
+  gap: 16px;
+}
+
+.about-card {
+  padding: 22px;
+  border: 1px solid var(--border-soft);
+  border-radius: 24px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(246, 248, 239, 0.78));
+  box-shadow: var(--shadow-soft);
+}
+
+.about-card h4 {
+  font-size: 1.2rem;
+  color: var(--green-deep);
+}
+
+.about-card p {
+  margin: 12px 0 0;
+  color: var(--text-muted);
+  line-height: 1.8;
 }
 
 .series-grid {
@@ -569,7 +659,7 @@ textarea {
   padding: 34px;
   border-radius: 36px;
   background:
-    linear-gradient(135deg, rgba(18, 63, 34, 0.95), rgba(94, 160, 90, 0.88)),
+    linear-gradient(135deg, rgba(28, 69, 41, 0.96), rgba(95, 141, 79, 0.9) 60%, rgba(137, 118, 72, 0.62) 100%),
     rgba(255, 255, 255, 0.12);
   color: #f1fff1;
   overflow: hidden;
@@ -841,6 +931,7 @@ textarea {
   .hero-section,
   .split-section,
   .contact-section,
+  .about-grid,
   .series-grid,
   .advantage-grid,
   .detail-hero,
@@ -867,6 +958,7 @@ textarea {
   .hero-section,
   .split-section,
   .contact-section,
+  .about-grid,
   .series-grid,
   .advantage-grid,
   .stats-grid,
@@ -921,6 +1013,11 @@ textarea {
     border-radius: 28px;
   }
 
+  .about-main {
+    padding: 24px 18px;
+    border-radius: 28px;
+  }
+
   .site-footer {
     display: grid;
   }
@@ -970,6 +1067,7 @@ textarea {
 
   .series-card,
   .advantage-card,
+  .about-card,
   .solution-panel,
   .process-panel,
   .contact-card,

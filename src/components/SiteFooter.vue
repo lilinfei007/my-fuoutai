@@ -2,7 +2,7 @@
   <footer class="site-footer">
     <div>
       <p class="section-kicker">FUOUTAI AGRITECH</p>
-      <strong>绿色营养方案，服务现代农业种植。</strong>
+      <strong>绿色营养方案，服务稳产与提质。</strong>
     </div>
 
     <div class="footer-meta">

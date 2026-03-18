@@ -1,5 +1,4 @@
 <script setup>
-import InquiryForm from '../components/InquiryForm.vue'
 import SiteFooter from '../components/SiteFooter.vue'
 import SiteHeader from '../components/SiteHeader.vue'
 import { products } from '../data/products'
@@ -149,27 +148,21 @@ const crops = [
         </div>
       </section>
 
-      <section id="contact" class="contact-section">
+      <section id="contact" class="contact-section contact-single">
         <div class="contact-copy">
           <p class="section-kicker">CONTACT</p>
           <h3>为你的作物定制一套更合适的营养方案</h3>
           <p>
-            现在已经支持从首页进入产品详情页和提交在线留言。你可以直接收集联系人、作物类型、地区和采购意向，用于官网演示或后续对接真实接口。
+            当前页面先仅保留企业联系信息展示。如果你后续需要重新开放在线留言、钉钉通知或表单收集功能，可以在现有基础上快速恢复。
           </p>
 
           <div class="contact-card">
-            <p><span>服务热线</span>400-888-2026</p>
-            <p><span>商务邮箱</span>sales@fuoutai.com</p>
-            <p><span>企业地址</span>山东省寿光市现代农业产业园</p>
-            <a class="primary-btn full-width" href="mailto:sales@fuoutai.com">立即咨询合作</a>
+            <p><span>联系电话</span>400-816-0061</p>
+            <p><span>QQ</span>450505620</p>
+            <p><span>企业地址</span>湖北省武汉市黄陂区蔡家榨镇兴崛大道27号附9号</p>
+            <a class="primary-btn full-width" href="tel:4008160061">立即电话咨询</a>
           </div>
         </div>
-
-        <InquiryForm
-          title="提交种植需求"
-          subtitle="留下联系方式和作物信息，我们将为你推荐更匹配的施肥方案。"
-          theme="dark"
-        />
       </section>
     </main>
 

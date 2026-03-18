@@ -580,6 +580,14 @@ textarea {
   gap: 18px;
 }
 
+.contact-single {
+  grid-template-columns: 1fr;
+}
+
+.contact-single .contact-copy {
+  max-width: 760px;
+}
+
 .contact-section .section-kicker,
 .contact-section p,
 .contact-card p,
@@ -823,6 +831,12 @@ textarea {
   color: var(--text-muted);
 }
 
+.footer-meta {
+  display: grid;
+  gap: 6px;
+  text-align: right;
+}
+
 @media (max-width: 1120px) {
   .hero-section,
   .split-section,
@@ -909,6 +923,10 @@ textarea {
 
   .site-footer {
     display: grid;
+  }
+
+  .footer-meta {
+    text-align: left;
   }
 }
 

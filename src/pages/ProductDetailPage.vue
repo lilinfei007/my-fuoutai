@@ -1,7 +1,6 @@
 <script setup>
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
-import InquiryForm from '../components/InquiryForm.vue'
 import SiteFooter from '../components/SiteFooter.vue'
 import SiteHeader from '../components/SiteHeader.vue'
 import { getProductBySlug, products } from '../data/products'
@@ -28,7 +27,7 @@ const relatedProducts = computed(() =>
           <p class="detail-lead">{{ product.description }}</p>
 
           <div class="cta-row">
-            <a class="primary-btn" href="#inquiry">在线留言</a>
+            <a class="primary-btn" href="tel:4008160061">电话咨询</a>
             <RouterLink class="secondary-btn" to="/">返回首页</RouterLink>
           </div>
         </div>
@@ -115,15 +114,6 @@ const relatedProducts = computed(() =>
             <p>{{ item.advice }}</p>
           </article>
         </div>
-      </section>
-
-      <section id="inquiry" class="content-section alt-surface">
-        <InquiryForm
-          :title="`${product.title} 咨询表单`"
-          subtitle="填写需求后，我们会结合当前产品和作物场景给出建议。"
-          :preset-product="product.title"
-          :lock-product="true"
-        />
       </section>
 
       <section class="content-section alt-surface">
